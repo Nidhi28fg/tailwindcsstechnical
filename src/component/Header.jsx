@@ -23,7 +23,7 @@ export default function Header() {
           <div className="md:text-4xl font-bold text-[#2171B5]">
             Employee Attendance
           </div>
-          <div className="hidden md:block md:flex gap-2 h-full pt-2 cursor-pointer">
+          <div className="hidden md:flex gap-2 h-full pt-2 cursor-pointer">
             <div className="text-gray-400 text-[25px]">
               <AiOutlineMessage />
             </div>
