@@ -50,11 +50,11 @@ export default function EmployeeTable() {
   return (
     <>
       <div className="flex items-center justify-between p-2">
-        <div className="flex items-center justify-between font-semibold text-[#008D57]">
+        <div className="flex items-center justify-between text-sm font-semibold text-[#008D57]">
           <IoIosArrowBack className="font-semibold md:text-xl" /> Previous Month
         </div>
         <div className="font-semibold md:text-xl">April 2025</div>
-        <div className="flex items-center justify-between font-semibold text-[#008D57] ">
+        <div className="flex text-sm items-center justify-between font-semibold text-[#008D57] ">
           Next Month <IoIosArrowForward className="font-semibold md:text-xl" />
         </div>
       </div>
