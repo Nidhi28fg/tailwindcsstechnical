@@ -4,26 +4,28 @@ import { IoIosArrowForward } from "react-icons/io";
 import { RiExpandUpDownFill } from "react-icons/ri";
 import { IoCall } from "react-icons/io5";
 import Profile from "../assets/profile.jpg";
+import Profile1 from "../assets/profile1.png";
+import Profile2 from "../assets/profile2.jpg";
 import { PiDotsThreeVerticalBold } from "react-icons/pi";
 
 const employees = [
   { name: "Gerald Giles", role: "Sales Manager", photo: Profile },
-  { name: "Sanglekar", role: "Business Analyst", photo: Profile },
-  { name: "Gayathri N", role: "Sales Manager", photo: Profile },
-  { name: "Sachidanan", role: "Sales Manager", photo: Profile },
+  { name: "Sanglekar", role: "Business Analyst", photo: Profile1 },
+  { name: "Gayathri N", role: "Sales Manager", photo: Profile2 },
+  { name: "Sachidanan", role: "Sales Manager", photo: Profile1 },
   { name: "Gerald Giles", role: "Sales Manager", photo: Profile },
-  { name: "Sanglekar", role: "Sales Manager", photo: Profile },
-  { name: "Gayathri N", role: "", photo: Profile },
-  { name: "Sachidanan", role: "", photo: Profile },
+  { name: "Sanglekar", role: "Sales Manager", photo: Profile1 },
+  { name: "Gayathri N", role: "", photo: Profile2 },
+  { name: "Sachidanan", role: "", photo: Profile1 },
   { name: "Gerald Giles", role: "", photo: Profile },
+  { name: "Sanglekar", role: "Sales Manager", photo: Profile2 },
+  { name: "Gerald Giles", role: "Sales Manager", photo: Profile1 },
   { name: "Sanglekar", role: "Sales Manager", photo: Profile },
-  { name: "Gerald Giles", role: "Sales Manager", photo: Profile },
-  { name: "Sanglekar", role: "Sales Manager", photo: Profile },
-  { name: "Sachidanan", role: "", photo: Profile },
-  { name: "Sanglekar", role: "Sales Manager", photo: Profile },
-  { name: "Sachidanan", role: "", photo: Profile },
+  { name: "Sachidanan", role: "", photo: Profile1 },
+  { name: "Sanglekar", role: "Sales Manager", photo: Profile2 },
+  { name: "Sachidanan", role: "", photo: Profile1 },
   { name: "Gerald Giles", role: "", photo: Profile },
-  { name: "Sanglekar", role: "Sales Manager", photo: Profile },
+  { name: "Sanglekar", role: "Sales Manager", photo: Profile1 },
 ];
 
 const generateDays = (year, month) => {
@@ -112,9 +114,9 @@ export default function EmployeeTable() {
                   <img
                     src={emp.photo}
                     alt={emp.name}
-                    className="w-[32px] h-8 object-cover rounded-full"
+                    className="w-[30px] h-8 object-cover border-2 rounded-full"
                   />
-                  <div>
+                  <div className="w-[120px]">
                     <div className="xl:uppercase text-[10px] xl:text-[16px]">{emp.name}</div>
                     <div className="text-[10px]">{emp.role}</div>
                   </div>
